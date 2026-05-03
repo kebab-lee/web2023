@@ -311,7 +311,7 @@
             //데이터 가져오기
             const dataQuestion = (value) => {
                 fetch(
-                    `https://kebab000.github.io/web2023/gineungsaJSON/${value}.json`
+                    `https://kebab-lee.github.io/web2023/gineungsaJSON/${value}.json`
                 )
                     .then((res) => res.json())
                     .then((items) => {
@@ -377,7 +377,7 @@
                     exam.push(`
                     <div class="cbt">
                         <div class="cbt__question"><span>${question.number}</span>. ${question.question}</div>
-                        <div class="cbt__question__img"><img src="https://kebab000.github.io/web2023/gineungsaJPG/${question.question_img}.jpg" alt="시험이미지"></div>
+                        <div class="cbt__question__img"><img src="https://kebab-lee.github.io/web2023/gineungsaJPG/${question.question_img}.jpg" alt="시험이미지"></div>
                         <div class="cbt__question__desc">${question.question_desc}</div>
                         <div class="cbt__selects">
                             <input type="radio" id="select${number}_1" name="select${number}" value="${number}_1" onclick="answerSelect2(this)">
